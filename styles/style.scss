@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./header";
+@import "./sections";
+// nesting
+.contact {
+    @include flexCenter(row, rgb(53, 143, 226));
+    button {
+        background: $primaryBtn;
+    }
+}

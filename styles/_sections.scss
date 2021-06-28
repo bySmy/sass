@@ -1,0 +1,17 @@
+// extend 
+.section1 {
+    @include flexCenter(column, rgb(211, 248, 216));
+    color: $textColor;
+    button {
+        background: $primaryBtn;
+        &:hover {
+            background: rgb(123, 160, 230);
+        }
+    }
+}
+
+.section2 {
+    @extend .section1;
+    background: lightcyan; // if we want to override 
+    width: 100% - 30%; // calculation operators that works fine
+}
